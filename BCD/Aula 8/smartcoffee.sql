@@ -1,0 +1,1 @@
+create database SMARTCOFFE_DML_JUAN;

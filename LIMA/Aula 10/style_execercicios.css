@@ -1,0 +1,45 @@
+.equipe {
+  display: flex;
+}
+.equipe {
+  display: flex;
+  gap: 30px;
+}
+
+.equipe {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* justify-content: space-between; */
+/* justify-content: space-evenly; *
+/* align-items: flex-end; */
+/* align-items: flex-start; */
+/* align-items: center; */
+.area {
+  display: flex;
+  height: 200px;
+  align-items: flex-start;
+}
+
+.caixa {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.pequena {
+  height: 30px;
+}
+
+.media {
+  height: 70px;
+}
+
+.grande {
+  height: 120px;
+}
+/* Exercicio 5 */
+.cards article {
+  display: flex;
+  gap: 20px;
+}

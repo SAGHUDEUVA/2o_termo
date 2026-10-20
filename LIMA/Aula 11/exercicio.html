@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="exercicio.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios CSS Grid</title>
+  <style>
+    /* Estilização básica para visualização dos itens */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    
+    .item {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 4px;
+      border: 2px solid #388E3C;
+    }
+
+    /* =======================================================
+       REGRAS DE GRID: Ative uma por vez para testar!
+       ======================================================= */
+
+    .container {
+      display: grid;
+      gap: 10px; /* Espaço entre os itens */
+
+      /* EXERCÍCIO 01: 3 Colunas */
+      grid-template-columns: 1fr 1fr 1fr;
+
+      /* EXERCÍCIO 02: 2 Colunas (Descomente para testar) */
+      /* grid-template-columns: 1fr 1fr; */
+
+      /* EXERCÍCIO 03: Frações (Descomente para testar) */
+      /* grid-template-columns: 2fr 1fr; */
+
+      /* EXERCÍCIO 04: Repeat (Descomente para testar) */
+      /* grid-template-columns: repeat(4, 1fr); */
+    }
+
+    /* EXERCÍCIO 05: Responsividade com Media Queries 
+       (Descomente todo o bloco abaixo para testar) */
+    /*
+    .container {
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 600px) {
+      .container { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px) {
+      .container { grid-template-columns: repeat(3, 1fr); }
+    }
+    */
+
+    /* EXERCÍCIO 06: Auto-fit Inteligente 
+       (Descomente a linha abaixo e mude o tamanho da tela para testar) */
+    /*
+    .container {
+      grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
+    }
+    */
+  </style>
+</head>
+<body>
+
+  <h1>Grade de Teste (Grid Layout)</h1>
+
+  <!-- Container com os 6 itens requisitados no Exercício 01 -->
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+
+</body>
+</html>

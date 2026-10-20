@@ -1,0 +1,73 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Cria exatamente 3 colunas iguais */
+  gap: 10px;                             /* Espaçamento entre os itens */
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: #4CAF50;             /* Cor de fundo verde (combinando com a imagem) */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;                       /* Permite que os itens quebrem para a próxima linha */
+  gap: 10px;
+}
+
+.grid-item {
+  flex: 1 1 calc(33.33% - 10px);         /* Ajusta o tamanho para caber exatamente 3 por linha */
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* exercicio 2 */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* exercicio 3 */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+/* exercicio 4 */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* exercicio 5 */
+/* Celular (padrão): 1 coluna */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Tablet: 2 colunas */
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop: 3 colunas */
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
+}

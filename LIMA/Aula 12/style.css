@@ -1,0 +1,176 @@
+/* Variáveis */
+/* Podemos guardar cores em um único local */
+
+:root {
+    /* Paleta de cores */
+    --espresso: #2B170D;
+    --cafe: #5A321B;
+    --caramelo: #C66A1A;
+    --creme: #F3E6D7;
+    --marfim: #FFF9F3;
+    --taupe: #9A887A;
+    --texto: #1E140F;
+    --branco: #FFFFFF;
+
+    /* Fontes ou tipografia */
+    --fonte-principal: Arial, sans-serif;
+    --fonte-secundaria: "Poppins" , Helvetica;
+
+    /* Espaçamentos */
+    --espaço-xs: 4px;
+    --espaço-sm: 8px;
+    --espaço-md:
+}
+
+/* Obs: root é responsável por disponibilizar um espaço para cadastro de
+variáveis do elemento raiz do documento. Variáveis CSS globais. */
+
+
+/* ajustes iniciais */
+/* Configuração padrão com regras gerais */
+
+/* Aplicar configuração geral em todo o documento */
+* {
+    box-sizing: border-box;
+}
+
+/* Ajuste visual da rolagem da página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Configurações gerais do corpo da página */
+body {
+    background-color: var(--caramelo);
+    font-family: var(--fonte-principal);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* --------------------------------------------------------------------- */
+/* Hierarquia de fontes */
+h1, h2, h3 {
+    margin-top: 0;
+    color: var(--espresso); /* CORRIGIDO: Adicionado os '--' da variável */
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem; /* CORRIGIDO: Adicionado ';' faltando */
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: var(--espresso);
+}
+
+.visual {
+    color: var(--branco);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: var(--caramelo);
+    /* Representa o estado em que o cursor passa sobre o elemento */
+}
+
+.menu a:focus-visible {
+    outline: 3px dashed var(--caramelo);
+    outline-offset: 4px;
+    /* Estilos de formato de bordas: dotted, dashed, solid, double */
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding: 80px 8%;
+    background-color: var(--creme);
+}
+
+.banner-imagem {
+    flex: 1;
+    margin: 0; /* CORRIGIDO: Removido o bloco duplicado e unificado aqui */
+}
+
+.banner-imagem img {
+    width: 100%;
+    height: auto;
+}
+
+.marca-reg {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 24px;
+    background-color: var(--caramelo);
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.marca-reg:hover {
+    background-color: var(--cafe);
+    transition: background-color 0.8s ease;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding: 80px;
+}
+.lista-marca {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.img-cartao {
+    height: 100%;
+    padding: 20px;
+    background-color: var(--branco);
+    border: 1px solid var(--creme);
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(43, 23, 13, 0.08);
+}
+
+.img-cartao img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+}

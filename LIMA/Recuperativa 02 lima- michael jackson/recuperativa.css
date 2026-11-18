@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1a1a1a;
+    background: #121212;
+    line-height: 1.6;
+}
+
+.topo {
+    background: #000;
+    color: #fff;
+    padding: 15px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #d4af37;
+}
+
+.logo {
+    color: #d4af37;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover { color: #d4af37; }
+
+.banner {
+    padding: 60px 8%;
+    text-align: center;
+    background: linear-gradient(135deg, #000, #9e0b0f);
+    color: #fff;
+}
+
+.conteudo-banner { max-width: 750px; margin: auto; }
+
+.chamada { color: #ffd700; font-weight: bold; }
+
+h1 { margin: 12px 0; font-size: 38px; }
+
+.acoes-banner {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.imagem-ilustrativa img {
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.botao {
+    padding: 12px 24px;
+    background: #d4af37;
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.botao:hover { background: #fff; }
+
+/* Atrações */
+.secao-atracoes {
+    width: 84%;
+    margin: 35px auto;
+}
+
+.secao-atracoes h2 {
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grade-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #c8102e;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px #0006;
+}
+
+.card:hover { transform: translateY(-4px); }
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.card h3 { color: #9e0b0f; }
+
+.duas-colunas {
+    width: 84%;
+    margin: 25px auto 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.bloco-info {
+    background: #fff;
+    padding: 28px;
+    border-radius: 8px;
+    border-left: 6px solid #d4af37;
+    box-shadow: 0 4px 10px #0006;
+}
+
+.bloco-info h2 {
+    color: #9e0b0f;
+    margin-bottom: 12px;
+}
+
+.lista-horarios { list-style: none; }
+
+.lista-horarios li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+footer {
+    padding: 22px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    border-top: 3px solid #d4af37;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    .grade-cards, .duas-colunas {
+        grid-template-columns: 1fr;
+    }
+
+    .topo {
+        flex-direction: column;
+    }
+}
